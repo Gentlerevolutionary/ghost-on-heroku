@@ -5,13 +5,18 @@
   "repository": "https://github.com/cobyism/ghost-on-heroku",
   "success_url": "/ghost",
   "addons": [
-    "heroku-postgresql",
-    "mandrill"
+    "heroku-postgresql"
   ],
   "env": {
     "HEROKU_URL": {
       "description": "The URL of this Heroku app.",
       "value": "http://YOURAPPNAME.herokuapp.com"
+    },
+    "MANDRILL_USERNAME": {
+      "description": "The Mandrill username used by this app."
+    },
+    "MANDRILL_APIKEY": {
+      "description": "The Mandrill API key."
     }
   }
 }
